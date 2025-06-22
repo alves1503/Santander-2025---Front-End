@@ -1,25 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trabalhando com tabelas</title>
+
+    <style>
+     table {
+        border: solid 1px black;
+     }
+
+     table thead th {
+        background-color: black;
+        color: white;
+     }
+
+     table tfoot td {
+        background-color: lightgray;
+     }
+
+     table tbody tr:nth-child(even) td {
+        border-color: rgb(158, 158, 146);
+     }
+
+
+
+
+    </style>
 </head>
+
 <body>
 
     <h1>Trabalhando com tabelas</h1>
 
-    <table border="1">
-        <tr>
-            <td>Nome</td>
-            <td>Idade</td>
-        </tr>
+    <table cellspacing="0">
+        <thead>
+            <tr>
+                <th title="nome completo:">Nome</th>
+                <th>Idade</th>
+            </tr>
+        </thead>
 
-        <tr>
-            <td>Henrique</td>
-            <td>20</td>
-        </tr>
+        <tbody>
+
+            <tr>
+                <td>Henrique</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>João</td>
+                <td>28</td>
+            </tr>
+            <tr>
+                <td>Leo</td>
+                <td>30</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <tr>
+                <td>Total:</td>
+                <td>98</td>
+            </tr>
+        </tfoot>
+
     </table>
-    
+
 </body>
+
 </html>
